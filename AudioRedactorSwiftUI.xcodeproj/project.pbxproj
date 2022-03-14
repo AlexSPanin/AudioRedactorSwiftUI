@@ -18,6 +18,12 @@
 		E297ECEF27DF57BD007808B0 /* SettingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E297ECEE27DF57BD007808B0 /* SettingManager.swift */; };
 		E297ECF127DF57FB007808B0 /* ButtonsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E297ECF027DF57FB007808B0 /* ButtonsManager.swift */; };
 		E297ECF327DF58C1007808B0 /* SlidersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E297ECF227DF58C1007808B0 /* SlidersManager.swift */; };
+		E297ECF527DF7D3D007808B0 /* VolumeFrameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E297ECF427DF7D3D007808B0 /* VolumeFrameModel.swift */; };
+		E297ECF727DF7D90007808B0 /* EffectFrameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E297ECF627DF7D90007808B0 /* EffectFrameModel.swift */; };
+		E297ECF927DF7DC8007808B0 /* SongModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E297ECF827DF7DC8007808B0 /* SongModel.swift */; };
+		E297ECFB27DF7DF3007808B0 /* AudioDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E297ECFA27DF7DF3007808B0 /* AudioDataModel.swift */; };
+		E297ECFD27DF7E1F007808B0 /* AudioFrameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E297ECFC27DF7E1F007808B0 /* AudioFrameModel.swift */; };
+		E297ED0027DF7EF5007808B0 /* SongsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E297ECFF27DF7EF5007808B0 /* SongsDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +39,12 @@
 		E297ECEE27DF57BD007808B0 /* SettingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingManager.swift; sourceTree = "<group>"; };
 		E297ECF027DF57FB007808B0 /* ButtonsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonsManager.swift; sourceTree = "<group>"; };
 		E297ECF227DF58C1007808B0 /* SlidersManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlidersManager.swift; sourceTree = "<group>"; };
+		E297ECF427DF7D3D007808B0 /* VolumeFrameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeFrameModel.swift; sourceTree = "<group>"; };
+		E297ECF627DF7D90007808B0 /* EffectFrameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EffectFrameModel.swift; sourceTree = "<group>"; };
+		E297ECF827DF7DC8007808B0 /* SongModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongModel.swift; sourceTree = "<group>"; };
+		E297ECFA27DF7DF3007808B0 /* AudioDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioDataModel.swift; sourceTree = "<group>"; };
+		E297ECFC27DF7E1F007808B0 /* AudioFrameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioFrameModel.swift; sourceTree = "<group>"; };
+		E297ECFF27DF7EF5007808B0 /* SongsDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongsDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +80,7 @@
 				E297ECD227DF51DA007808B0 /* AudioRedactorSwiftUIApp.swift */,
 				E297ECE127DF51FF007808B0 /* View */,
 				E297ECE227DF5206007808B0 /* ViewModel */,
+				E297ECFE27DF7ECF007808B0 /* DataManager */,
 				E297ECE027DF51F5007808B0 /* Model */,
 				E297ECE327DF5249007808B0 /* Resources */,
 				E297ECEB27DF54A1007808B0 /* Services */,
@@ -88,6 +101,11 @@
 		E297ECE027DF51F5007808B0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E297ECFC27DF7E1F007808B0 /* AudioFrameModel.swift */,
+				E297ECFA27DF7DF3007808B0 /* AudioDataModel.swift */,
+				E297ECF627DF7D90007808B0 /* EffectFrameModel.swift */,
+				E297ECF427DF7D3D007808B0 /* VolumeFrameModel.swift */,
+				E297ECF827DF7DC8007808B0 /* SongModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -134,6 +152,14 @@
 				E297ECEC27DF57B7007808B0 /* TimeManager.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		E297ECFE27DF7ECF007808B0 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				E297ECFF27DF7EF5007808B0 /* SongsDataManager.swift */,
+			);
+			path = DataManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,9 +237,15 @@
 			files = (
 				E297ECF127DF57FB007808B0 /* ButtonsManager.swift in Sources */,
 				E297ECEF27DF57BD007808B0 /* SettingManager.swift in Sources */,
+				E297ECF727DF7D90007808B0 /* EffectFrameModel.swift in Sources */,
 				E297ECD527DF51DA007808B0 /* ContentView.swift in Sources */,
+				E297ECFD27DF7E1F007808B0 /* AudioFrameModel.swift in Sources */,
+				E297ECF527DF7D3D007808B0 /* VolumeFrameModel.swift in Sources */,
 				E297ECD327DF51DA007808B0 /* AudioRedactorSwiftUIApp.swift in Sources */,
+				E297ECF927DF7DC8007808B0 /* SongModel.swift in Sources */,
+				E297ED0027DF7EF5007808B0 /* SongsDataManager.swift in Sources */,
 				E297ECED27DF57B7007808B0 /* TimeManager.swift in Sources */,
+				E297ECFB27DF7DF3007808B0 /* AudioDataModel.swift in Sources */,
 				E297ECF327DF58C1007808B0 /* SlidersManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
