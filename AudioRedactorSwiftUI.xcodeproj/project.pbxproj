@@ -11,6 +11,9 @@
 		E297ECD527DF51DA007808B0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E297ECD427DF51DA007808B0 /* ContentView.swift */; };
 		E297ECD727DF51DA007808B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E297ECD627DF51DA007808B0 /* Assets.xcassets */; };
 		E297ECDA27DF51DA007808B0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E297ECD927DF51DA007808B0 /* Preview Assets.xcassets */; };
+		E297ECE527DF52E0007808B0 /* 01 The St. Louis Blues.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E297ECE427DF52E0007808B0 /* 01 The St. Louis Blues.m4a */; };
+		E297ECE727DF52E5007808B0 /* otbivka.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E297ECE627DF52E5007808B0 /* otbivka.mp3 */; };
+		E297ECE927DF52EA007808B0 /* Scott Buckley - Life In Silico.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E297ECE827DF52EA007808B0 /* Scott Buckley - Life In Silico.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		E297ECD427DF51DA007808B0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E297ECD627DF51DA007808B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E297ECD927DF51DA007808B0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E297ECE427DF52E0007808B0 /* 01 The St. Louis Blues.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "01 The St. Louis Blues.m4a"; sourceTree = "<group>"; };
+		E297ECE627DF52E5007808B0 /* otbivka.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = otbivka.mp3; sourceTree = "<group>"; };
+		E297ECE827DF52EA007808B0 /* Scott Buckley - Life In Silico.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Scott Buckley - Life In Silico.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +58,11 @@
 			isa = PBXGroup;
 			children = (
 				E297ECD227DF51DA007808B0 /* AudioRedactorSwiftUIApp.swift */,
-				E297ECD427DF51DA007808B0 /* ContentView.swift */,
+				E297ECE127DF51FF007808B0 /* View */,
+				E297ECE227DF5206007808B0 /* ViewModel */,
+				E297ECE027DF51F5007808B0 /* Model */,
+				E297ECE327DF5249007808B0 /* Resources */,
+				E297ECEB27DF54A1007808B0 /* Services */,
 				E297ECD627DF51DA007808B0 /* Assets.xcassets */,
 				E297ECD827DF51DA007808B0 /* Preview Content */,
 			);
@@ -65,6 +75,53 @@
 				E297ECD927DF51DA007808B0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E297ECE027DF51F5007808B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E297ECE127DF51FF007808B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E297ECD427DF51DA007808B0 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E297ECE227DF5206007808B0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E297ECE327DF5249007808B0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E297ECEA27DF53F3007808B0 /* AudioFiles */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E297ECEA27DF53F3007808B0 /* AudioFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E297ECE827DF52EA007808B0 /* Scott Buckley - Life In Silico.mp3 */,
+				E297ECE627DF52E5007808B0 /* otbivka.mp3 */,
+				E297ECE427DF52E0007808B0 /* 01 The St. Louis Blues.m4a */,
+			);
+			path = AudioFiles;
+			sourceTree = "<group>";
+		};
+		E297ECEB27DF54A1007808B0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +183,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E297ECDA27DF51DA007808B0 /* Preview Assets.xcassets in Resources */,
+				E297ECE727DF52E5007808B0 /* otbivka.mp3 in Resources */,
 				E297ECD727DF51DA007808B0 /* Assets.xcassets in Resources */,
+				E297ECE927DF52EA007808B0 /* Scott Buckley - Life In Silico.mp3 in Resources */,
+				E297ECE527DF52E0007808B0 /* 01 The St. Louis Blues.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
