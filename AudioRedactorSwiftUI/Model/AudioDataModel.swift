@@ -7,7 +7,8 @@
 
 import AVFAudio
 
-struct AudioDataModel {
+struct AudioDataModel: Identifiable {
+    var id = UUID()
     var name = SongModel()
     var file = AVAudioFile()
     var audioLengthSamples: AVAudioFramePosition = 0

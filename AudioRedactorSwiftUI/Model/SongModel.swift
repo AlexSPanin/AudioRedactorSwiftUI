@@ -7,11 +7,6 @@
 
 import Foundation
 
-enum Format: String {
-    case mp3 = "mp3"
-    case m4a = "m4a"
-}
-
 struct SongModel {
     var name: String = ""
     var format: String = ""

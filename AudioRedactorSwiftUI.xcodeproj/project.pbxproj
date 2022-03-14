@@ -24,6 +24,7 @@
 		E297ECFB27DF7DF3007808B0 /* AudioDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E297ECFA27DF7DF3007808B0 /* AudioDataModel.swift */; };
 		E297ECFD27DF7E1F007808B0 /* AudioFrameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E297ECFC27DF7E1F007808B0 /* AudioFrameModel.swift */; };
 		E297ED0027DF7EF5007808B0 /* SongsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E297ECFF27DF7EF5007808B0 /* SongsDataManager.swift */; };
+		E297ED0227DF9C80007808B0 /* AudioDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E297ED0127DF9C80007808B0 /* AudioDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		E297ECFA27DF7DF3007808B0 /* AudioDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioDataModel.swift; sourceTree = "<group>"; };
 		E297ECFC27DF7E1F007808B0 /* AudioFrameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioFrameModel.swift; sourceTree = "<group>"; };
 		E297ECFF27DF7EF5007808B0 /* SongsDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongsDataManager.swift; sourceTree = "<group>"; };
+		E297ED0127DF9C80007808B0 /* AudioDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				E297ECFF27DF7EF5007808B0 /* SongsDataManager.swift */,
+				E297ED0127DF9C80007808B0 /* AudioDataManager.swift */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				E297ECFD27DF7E1F007808B0 /* AudioFrameModel.swift in Sources */,
 				E297ECF527DF7D3D007808B0 /* VolumeFrameModel.swift in Sources */,
 				E297ECD327DF51DA007808B0 /* AudioRedactorSwiftUIApp.swift in Sources */,
+				E297ED0227DF9C80007808B0 /* AudioDataManager.swift in Sources */,
 				E297ECF927DF7DC8007808B0 /* SongModel.swift in Sources */,
 				E297ED0027DF7EF5007808B0 /* SongsDataManager.swift in Sources */,
 				E297ECED27DF57B7007808B0 /* TimeManager.swift in Sources */,

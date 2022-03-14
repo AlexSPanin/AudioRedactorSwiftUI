@@ -10,22 +10,23 @@ import Combine
 
 
 class SongsDataManager: ObservableObject {
-    @Published var audioSongs: [SongModel] = fetchSongs()
+    @Published var audioSongs: [AudioDataModel] = fetchSongs()
 }
-    func fetchSongs() -> [SongModel] {
+    func fetchSongs() -> [AudioDataModel] {
 
-        let song1 = fetchAudioSong(name: "Scott Buckley - Life In Silico", format: Format.mp3.rawValue)
-        let song2 = fetchAudioSong(name: "otbivka", format: Format.mp3.rawValue)
-        let song3 = fetchAudioSong(name: "01 The St. Louis Blues", format: Format.m4a.rawValue)
+        var songsModel = [AudioDataModel]()
         
-        var songsModel = [SongModel]()
-        songsModel.append(song1)
-        songsModel.append(song2)
-        songsModel.append(song3)
+        AudioDataManager.audio = fetchSongModel(name: "Scott Buckley - Life In Silico", format: "mp3")
+        songsModel.append(AudioDataManager.fetchAudioData())
+        AudioDataManager.audio = fetchSongModel(name: "otbivka", format: "mp3")
+        songsModel.append(AudioDataManager.fetchAudioData())
+        AudioDataManager.audio = fetchSongModel(name: "01 The St. Louis Blues", format: "m4a")
+        songsModel.append(AudioDataManager.fetchAudioData())
+        
         return songsModel
     }
     
-    func fetchAudioSong(name: String, format: String ) -> SongModel {
+    func fetchSongModel(name: String, format: String ) -> SongModel {
         let song: SongModel = SongModel(name: name, format: format)
         return song
     }

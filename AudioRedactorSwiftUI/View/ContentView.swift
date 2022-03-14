@@ -9,12 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var songsDataManager: SongsDataManager
-    var songs: [SongModel] {songsDataManager.audioSongs}
+    var songs: [AudioDataModel] {songsDataManager.audioSongs}
     
     var body: some View {
         VStack {
-        ForEach(songs, id: \.name) { song in
-            Text("\(song.name) \(song.format)")
+        ForEach(songs) { song in
+            Text("\(song.name.name) \(song.name.format)")
         }
         }
             .padding()
