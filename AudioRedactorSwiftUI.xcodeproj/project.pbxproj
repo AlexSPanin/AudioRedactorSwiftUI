@@ -14,6 +14,10 @@
 		E297ECE527DF52E0007808B0 /* 01 The St. Louis Blues.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E297ECE427DF52E0007808B0 /* 01 The St. Louis Blues.m4a */; };
 		E297ECE727DF52E5007808B0 /* otbivka.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E297ECE627DF52E5007808B0 /* otbivka.mp3 */; };
 		E297ECE927DF52EA007808B0 /* Scott Buckley - Life In Silico.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E297ECE827DF52EA007808B0 /* Scott Buckley - Life In Silico.mp3 */; };
+		E297ECED27DF57B7007808B0 /* TimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E297ECEC27DF57B7007808B0 /* TimeManager.swift */; };
+		E297ECEF27DF57BD007808B0 /* SettingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E297ECEE27DF57BD007808B0 /* SettingManager.swift */; };
+		E297ECF127DF57FB007808B0 /* ButtonsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E297ECF027DF57FB007808B0 /* ButtonsManager.swift */; };
+		E297ECF327DF58C1007808B0 /* SlidersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E297ECF227DF58C1007808B0 /* SlidersManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,10 @@
 		E297ECE427DF52E0007808B0 /* 01 The St. Louis Blues.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "01 The St. Louis Blues.m4a"; sourceTree = "<group>"; };
 		E297ECE627DF52E5007808B0 /* otbivka.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = otbivka.mp3; sourceTree = "<group>"; };
 		E297ECE827DF52EA007808B0 /* Scott Buckley - Life In Silico.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Scott Buckley - Life In Silico.mp3"; sourceTree = "<group>"; };
+		E297ECEC27DF57B7007808B0 /* TimeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeManager.swift; sourceTree = "<group>"; };
+		E297ECEE27DF57BD007808B0 /* SettingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingManager.swift; sourceTree = "<group>"; };
+		E297ECF027DF57FB007808B0 /* ButtonsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonsManager.swift; sourceTree = "<group>"; };
+		E297ECF227DF58C1007808B0 /* SlidersManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlidersManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +128,10 @@
 		E297ECEB27DF54A1007808B0 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				E297ECF227DF58C1007808B0 /* SlidersManager.swift */,
+				E297ECF027DF57FB007808B0 /* ButtonsManager.swift */,
+				E297ECEE27DF57BD007808B0 /* SettingManager.swift */,
+				E297ECEC27DF57B7007808B0 /* TimeManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -197,8 +209,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E297ECF127DF57FB007808B0 /* ButtonsManager.swift in Sources */,
+				E297ECEF27DF57BD007808B0 /* SettingManager.swift in Sources */,
 				E297ECD527DF51DA007808B0 /* ContentView.swift in Sources */,
 				E297ECD327DF51DA007808B0 /* AudioRedactorSwiftUIApp.swift in Sources */,
+				E297ECED27DF57B7007808B0 /* TimeManager.swift in Sources */,
+				E297ECF327DF58C1007808B0 /* SlidersManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
