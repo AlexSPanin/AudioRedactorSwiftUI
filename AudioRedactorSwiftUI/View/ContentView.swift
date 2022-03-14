@@ -13,13 +13,12 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-        ForEach(songs) { song in
-            Text("\(song.name.name) \(song.name.format)")
+            ForEach(songs) { song in
+                Text("\(song.name.name) \(song.name.format)")
+            }
         }
-        }
-            .padding()
+        .padding()
     }
-        
 }
 
 struct ContentView_Previews: PreviewProvider {

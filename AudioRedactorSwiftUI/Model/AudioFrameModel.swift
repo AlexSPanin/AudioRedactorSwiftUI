@@ -9,6 +9,7 @@ import AVFAudio
 
 struct AudioFrameModel {
     var index = UUID().uuidString
+    var track: Int = 0
     var audioForFrame = AudioDataModel()                   // привязка фрэйма к музыкальному трэку
     var effectFrame = EffectFrameModel()                   // набор эффектов к фрэйму
     

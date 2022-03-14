@@ -11,7 +11,7 @@ struct AudioDataModel: Identifiable {
     var id = UUID()
     var name = SongModel()
     var file = AVAudioFile()
-    var audioLengthSamples: AVAudioFramePosition = 0
+    var audioLengthSamples: AVAudioFrameCount = 0
     var audioLengthSeconds: Double = 0
     var audioSampleRate: Double = 0
     var audioFormat = AVAudioFormat()

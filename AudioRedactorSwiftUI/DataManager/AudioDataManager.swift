@@ -20,7 +20,7 @@ struct AudioDataManager {
                 var dataSong = AudioDataModel()
                 dataSong.name = audio
                 dataSong.file = file
-                dataSong.audioLengthSamples = file.length
+                dataSong.audioLengthSamples = AVAudioFrameCount(file.length)
                 dataSong.audioLengthSeconds = Double(file.length) / format.sampleRate
                 dataSong.audioSampleRate = format.sampleRate
                 dataSong.audioFormat = format
